@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./rps-game.ico" type="image/x-icon">
+    <title>RTS GAME</title>   
+</head>
+<body>
+    <header id="pageHeader">
+        <h1 id="pageName">RPS GAME</h1>
+        <img id="headerLogo" src="./images/logo.png" width="90px" height="70px">
+    </header>
+
+    <div id="interfaces">
+        <div id="playerInterface">
+            <h2 id="playerName">Teste</h2>
+            <img id="playerRock" class="playerChoice" onclick="rtsGame('0')" src="./images/stone.png" height="150px">
+            <img id="playerPaper" class="playerChoice" onclick="rtsGame('1')" src="./images/paper.png" height="150px">
+            <img id="playerScissor" class="playerChoice" onclick="rtsGame('2')"src="./images/scissor.png" height="150px">
+        </div>
+        
+        <div id="scoreboard">
+            <div id="playerScore">
+                <h2 id="playerWinsName">WINS</h2>
+                <h2 id="winsText" class="scoreboardNumber">00</h2>
+            </div>
+            <div id="aTie">
+                <h2>TIE</h2>
+                <h2 id="aTieText" class="scoreboardNumber">00</h2>
+            </div>
+            <div>
+            <h2 id="playerLoosesName">Looses</h2>
+            <h2 id="loosesText" class="scoreboardNumber">00</h2>
+            </div>
+        </div>
+
+        <div id="computerInterface">
+            <h2 id="computerName">COMPIUTER</h2>
+            <img id="computerRock" class="computerChoice" src="./images/stone.png" height="150px">
+            <img id="computerPaper" class="computerChoice" src="./images/paper.png" height="150px">
+            <img id="computerScissor" class="computerChoice" src="./images/scissor.png" height="150px">
+        </div>
+    </div>
+    
+    <div id="whoWin">
+        <h2 id="announcement"></h2>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

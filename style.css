@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    color: #d8d8d8;
+}
+
+body{
+    background-color: #656565;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+#pageHeader{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    background-color: #474747;
+}
+#pageName{
+    margin-top: 1%;
+    margin-right: 0.5%;
+}
+#interfaces{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.playerChoice{
+    background-color: #4285f4;
+    border: 2px solid #ffffff;
+}
+.computerChoice{
+    background-color: #db4437;
+    border: 2px solid #ffffff;
+}
+#playerInterface{
+    margin-left: 2%;
+}
+#computerInterface{
+    margin-right: 2%;
+}
+#whoWin{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 50px;
+    color: white
+}
+
+#scoreboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#playerScore{
+    margin-right:20%;
+}
+
+#aTie{
+    margin-right: 20%;
+}
+
+.scoreboardNumber{
+    font-size: 70px;
+    color: #ffba00;
+}
+#playerWinsName, #playerName{
+    color:#4285f4
+}
+
+#playerLoosesName, #computerName{
+    color: #db4437;
+}
