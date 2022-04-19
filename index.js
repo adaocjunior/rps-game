@@ -28,44 +28,35 @@ function rtsGame(playerChoice){
     computerChoice = Math.random() * 3
     computerChoice = Math.floor(computerChoice)
 
-    //Player Wins
+    //Player Wincondition
     if (playerChoice == 0 && computerChoice == 2){
         wins ++
         winsText.innerText = lessThanTen(wins)
-        announcement.innerText = `${playerNameString} VENCEU!`
+        announcement.innerText = `${playerNameString} WON!`
     }
-    if (playerChoice == 1 && computerChoice == 0){
+    else if (playerChoice == 1 && computerChoice == 0){
         wins ++
         winsText.innerText = lessThanTen(wins)
-        announcement.innerText = `${playerNameString} VENCEU!`
+        announcement.innerText = `${playerNameString} WON!`
     }
-    if (playerChoice == 2 && computerChoice == 1){
+    else if (playerChoice == 2 && computerChoice == 1){
         wins ++
         winsText.innerText = lessThanTen(wins)
-        announcement.innerText = `${playerNameString} VENCEU!`
+        announcement.innerText = `${playerNameString} WON!`
     }
-    //Computer Wins
-    if (playerChoice == 2 && computerChoice == 0){
-        looses ++
-        loosesText.innerText = lessThanTen(looses)
-        announcement.innerText = `COMPIUTER VENCEU!`
-    }
-    if (playerChoice == 0 && computerChoice == 1){
-        looses ++
-        loosesText.innerText = lessThanTen(looses)
-        announcement.innerText = `COMPIUTER VENCEU!`
-    }
-    if (playerChoice == 1 && computerChoice == 2){
-        looses ++
-        loosesText.innerText = lessThanTen(looses)
-        announcement.innerText = `COMPIUTER VENCEU!`
-    }
-    // A tie
-    if (playerChoice == computerChoice){
+    // A tie condition
+    else if (playerChoice == computerChoice){
         aTie ++
         aTieText.innerText = lessThanTen(aTie)
         announcement.innerText = `TIE!`
     }
+    // Computer wincondition
+    else{
+        looses ++
+        loosesText.innerText = lessThanTen(looses)
+        announcement.innerText = `COMPIUTER WON`
+    }
+
     switch (playerChoice){
         case '0':
             playerRock.style.backgroundColor = '#122544'
