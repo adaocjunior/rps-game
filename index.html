@@ -9,18 +9,20 @@
     <title>RPS GAME</title>   
 </head>
 <body>
-    <header id="pageHeader">
+    <header>
         <h1 id="pageName">RPS GAME</h1>
         <img id="headerLogo" src="./images/logo.png" width="90px" height="70px">
     </header>
 
     <div id="interfaces">
         <div id="playerInterface">
-            <h2 id="playerName">Teste</h2>
-            <h2 id="winsText" class="scoreboardNumber">00</h2>
-            <img id="playerRock" class="playerChoice" onclick="rtsGame('0')" src="./images/stone.png" height="150px">
-            <img id="playerPaper" class="playerChoice" onclick="rtsGame('1')" src="./images/paper.png" height="150px">
-            <img id="playerScissor" class="playerChoice" onclick="rtsGame('2')"src="./images/scissor.png" height="150px">
+                <h2 id="playerName">Teste</h2>
+                <h2 id="winsText" class="scoreboardNumber">00</h2>
+                <div id="playerItems">
+                    <img id="playerRock" class="playerChoice" onclick="rtsGame('0')" src="./images/stone.png" height="150px">
+                    <img id="playerPaper" class="playerChoice" onclick="rtsGame('1')" src="./images/paper.png" height="150px">
+                    <img id="playerScissor" class="playerChoice" onclick="rtsGame('2')"src="./images/scissor.png" height="150px">
+                </div>
         </div>
         
         <div id="scoreboard">
@@ -31,25 +33,30 @@
         <div id="computerInterface">
             <h2 id="computerName">COMPIUTER</h2>
             <h2 id="loosesText" class="scoreboardNumber">00</h2>
-            <img id="computerRock" class="computerChoice" src="./images/stone.png" height="150px">
-            <img id="computerPaper" class="computerChoice" src="./images/paper.png" height="150px">
-            <img id="computerScissor" class="computerChoice" src="./images/scissor.png" height="150px">
+            <div id="computerItems">
+                <img id="computerRock" class="computerChoice" src="./images/stone.png" height="150px">
+                <img id="computerPaper" class="computerChoice" src="./images/paper.png" height="150px">
+                <img id="computerScissor" class="computerChoice" src="./images/scissor.png" height="150px">
+            </div>
         </div>
     </div>
     
     <div id="whoWin">
-        <h2 id="announcement"></h2>
+        <h2 id="announcement">Select your move!</h2>
     </div>
 
-    <div class="footer">
+    <footer>
         <div id="footerContent">
-            <a href="https://www.linkedin.com/in/adao-junior8678/" id="linkedinLink">Linkedin</a>
-            <a href="https://github.com/adaocjunior" id="githubLink">Github</a>
+            <div id="socialMedia">
+                <a id="linkedin" class="socialMedia" href="https://www.linkedin.com/in/adao-junior8678/">Linkedin</a>
+                <a id="github" class="socialMedia" href="https://github.com/adaocjunior">Github</a>
+            </div>
+            <div id="copyright">
+                <p id="copyright">2022 - Adão Júnior</p>
+            </div>
         </div>
-        <div id="copyright">
-            <p>2021 - Adão Júnior</p>
-        </div>
-    </div>
+    </footer>
+
     <script src="index.js"></script>
 </body>
 </html>

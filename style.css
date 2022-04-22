@@ -5,75 +5,56 @@
     margin: 0;
     text-transform: uppercase;
 }
-h1{
-    font-family: 'Rubik', sans-serif;
-    color: #d8d8d8;
-}
 
 body{
     background-color: #656565;
 }
-h2{
-    font-family: 'Oswald', sans-serif;
-}
-#pageHeader{
+
+header{
     display: flex;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
     flex-direction: row;
+    width: 100%;
     background-color: #474747;
     box-shadow: 0px 4px #2e2e2e;
 }
-#playerName,#computerName{
-    font-size: 60px
+
+h1{
+    font-family: 'Rubik', sans-serif;
+    color: #d8d8d8;
 }
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+
 #pageName{
     margin-top: 1%;
     margin-right: 0.5%;
 }
+
 #interfaces{
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
     text-align: center;
-}
-.playerChoice{
-    background-color: #4285f4;
-    border: 2px solid #ffffff;
-}
-.computerChoice{
-    background-color: #db4437;
-    border: 2px solid #ffffff;
+    flex-wrap: wrap;
 }
 #playerInterface{
-    margin-left: 2%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
+
 #computerInterface{
-    margin-right: 2%;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 #whoWin{
-    margin-top: 10%;
     display: flex;
     justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    font-size: 50px;
-    color: white;
 }
 
-#scoreboard{
-    font-size: 40px;
-    color: white;
-}
-
-#looses{
-    margin-left: 20.8%;
-}
-.scoreboardNumber{
-    font-size: 80px;
-    color: #ffba00;
-}
 #playerWinsName, #playerName{
     color:#4285f4
 }
@@ -86,38 +67,64 @@ h2{
     text-shadow: 4px 3px #000000;
 }
 
-.footer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+.scoreboardNumber{
+    font-size: 70px;
+    color: #ffba00;
+}
+
+#whoWin{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    height: 80px;
+    flex-wrap: wrap;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.playerChoice,.computerChoice{
+    background-color: #db4437;
+    border: 2px solid #ffffff;
+}
+#scoreboard{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#playerName,#computerName{
+    font-size: 60px
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5.6%;
     background-color: #474747;
-    box-shadow: 0 0 1em #2e2e2e;;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 2em #424242;
+
 }
 
 #footerContent{
     display: flex;
-    text-align: center;
-    justify-content: center;
-}
-a{
-    margin-top: 20px;
-    text-decoration: none;
-    color: #d8d8d8;
+    flex-direction: column;
 }
 
-#linkedinLink{
+.socialMedia, #copyright{
+    margin-top: 20%;
+}
+
+#linkedin{
     margin-right: 20px;
 }
-#githubLink{
-    margin-left: 20px;
+#github{
+    margin-left: 16px;
 }
 
-#copyright{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.socialMedia, #copyright{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
 }
-
