@@ -82,8 +82,12 @@ h2{
     color: #ffffff;
 }
 
-.playerChoice,.computerChoice{
+.computerChoice{
     background-color: #db4437;
+    border: 2px solid #ffffff;
+}
+.playerChoice{
+    background-color:#4285f4;
     border: 2px solid #ffffff;
 }
 #scoreboard{
@@ -96,31 +100,29 @@ h2{
 }
 
 footer{
-    display: flex;
-    justify-content: space-between;
+    position: fixed;
     width: 100%;
-    margin-top: 5.6%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     background-color: #474747;
-    justify-content: center;
-    text-align: center;
     box-shadow: 0 0 2em #424242;
 
 }
 
 #footerContent{
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 
 .socialMedia, #copyright{
-    margin-top: 20%;
+    margin-top: 2%;
 }
 
 #linkedin{
     margin-right: 20px;
 }
 #github{
-    margin-left: 16px;
+    margin-left: 20px;
 }
 
 .socialMedia, #copyright{
